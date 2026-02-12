@@ -66,10 +66,12 @@ const Navbar = ({ user }) => {
                     <div className=" fixed bg-black/60 top-0 right-0 z-20  backdrop-blur-sm p-12 w-full  flex flex-col justify-center items-center lg:hidden">
                        <ul>
                          {navItems.map((item, index) => (
-                            <li key={index} className="py-4 list-none ">
-                                <a href={item.href}>{item.label}</a>
+                            <li key={index} className="py-4 list-none">
+                                <Link to={item.to}>
+                                {item.label}
+                                </Link>
                             </li>
-                        ))}
+                            ))}
                        </ul>
                        <div className="">
                           <div className="flex gap-1.5">

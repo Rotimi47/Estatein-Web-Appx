@@ -64,10 +64,10 @@ import strikeicon from "../assets/strikeIcon.svg";
 
 
 export const navItems = [
-  { label: "Home", href: "/" },
-  { label: "About Us", href: "/about-us" },
-  { label: "Properties", href: "/properties" },
-  { label: "Contacts", href: "/contact" },
+  { label: "Home", to: "/" },
+  { label: "About Us", to: "/about-us" },
+  { label: "Properties", to: "/properties" },
+  { label: "Contacts", to: "/contact" },
 ];
 
 export const features = [
