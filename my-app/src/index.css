@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+:root{
+    font-family: 'Urbanist', sans-serif;
+    color-scheme: dark;
+}
+/* Global container */
+.container {
+  max-width: 1280px; /* default */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width:100%
+}
+
+/* Larger screens (2K+) */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1440px;
+  }
+}
