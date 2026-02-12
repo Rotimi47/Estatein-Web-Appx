@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutHero from '../components/aboutHero'
+import AboutHero from '../components/AboutHero'
 import Values from '../components/Values'
 import Achievements from '../components/Achievements'
 
