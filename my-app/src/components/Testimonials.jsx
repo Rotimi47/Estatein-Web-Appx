@@ -29,11 +29,11 @@ const Testimonials = () => {
 
             <div className='flex justify-between'>
                 <div>
-                    <button className=' border border-neutral-700 w-full text-sm rounded-md bg-[#262626] py-3.5 px-5 '>View All Properties</button>
+                    <p>01/10</p>
                 </div>
-                <div className='flex'>
-                        <ArrowLeft />
-                        <ArrowRight />
+                <div className='flex gap-2.5'>
+                        <ArrowLeft className='border rounded-2xl  border-neutral-700 hover:bg-neutral-800'/>
+                        <ArrowRight className='border rounded-2xl  border-neutral-700 hover:bg-neutral-800'/>
                         
                 </div>
 

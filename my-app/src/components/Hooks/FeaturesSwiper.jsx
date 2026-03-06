@@ -13,7 +13,7 @@ const FeaturesSwiper = ({ features }) => {
             loop={true} 
             speed={400} 
             grabCursor={true} 
-            autoplay={{ delay: 3000, 
+            autoplay={{ delay: 5000, 
             disableOnInteraction: false, }} 
             modules={[Autoplay]} 
             breakpoints={{ 
@@ -37,7 +37,6 @@ const FeaturesSwiper = ({ features }) => {
                                     <div className=" flex justify-between"> 
                                         <div> <h2>Price</h2> <h1>{feature.price}</h1> 
                                          
-                        
                                     </div> 
                                     
                                       <ViewBtn id={feature.id} />  

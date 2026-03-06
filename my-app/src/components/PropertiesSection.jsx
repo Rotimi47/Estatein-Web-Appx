@@ -27,9 +27,9 @@ const PropertiesSection = () => {
 
                 <div className='flex justify-between'>
                     
-                    <div className='flex'>
-                        <ArrowLeft />
-                        <ArrowRight />
+                    <div className='flex gap-2.5'>
+                        <ArrowLeft className='border rounded-2xl  border-neutral-700 hover:bg-neutral-800'/>
+                        <ArrowRight className='border rounded-2xl  border-neutral-700 hover:bg-neutral-800'/>
                         
                     </div>
                 </div>

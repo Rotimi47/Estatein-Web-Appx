@@ -14,7 +14,7 @@ const TestimonialSwiper = ({testimonials}) => {
         speed={400}
         grabCursor={true}
         autoplay={{
-            delay: 3000,
+            delay: 5000,
             disableOnInteraction: false,
         }}
         modules={[Autoplay]}

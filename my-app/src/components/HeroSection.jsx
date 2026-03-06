@@ -6,6 +6,7 @@ import heroWallet from '../assets/heroWallet.png';
 import heroSun from '../assets/heroSun.png';
 import heroBuilding from '../assets/heroBuilding.png'
 import arrowUpLeft from '../assets/arrowUpLeft.svg'
+import {Link} from 'react-router-dom'
 
 
 
@@ -25,7 +26,7 @@ const HeroSection = () => {
             
                 <div className='flex flex-col lg:flex-row gap-4'> 
                     <div>
-                        <button className='w-full lg:w-28 text-sm rounded-md bg-[#262626] py-3.5 px-5'>Learn More</button>
+                        <button className='w-full lg:w-28 text-sm rounded-md bg-[#262626] py-3.5 px-5 text-white transition-all duration-300 ease-in-out hover:bg-linear-to-r hover:from-[#2f2f2f] hover:to-[#3a3a3a] hover:shadow-lg hover:shadow-black/40 hover:-translate-y-0.5 hover:scale-[1.03]'><Link to="/about-us">Learn More </Link></button>
                     </div>
                     <div>
                         <BrowseBtn/>

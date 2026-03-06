@@ -1,19 +1,15 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
-const Dropdown = ({ placeholder, options, icon: Icon, onSelect}) => {
+const Dropdown = ({ placeholder, options, icon: Icon, value, onChange}) => {
   const [open, setOpen] = useState(false);
-  const [value, setValue] = useState("");
+  
 
   const handleSelect = (option) => {
-    setValue(option);
+    if (onChange) onChange(option); // send value to RHF
     setOpen(false);
-
-     // ✅ notify parent IF callback exists
-    if (onSelect) {
-      onSelect(option);
-    }
   };
+
 
 
   return (
@@ -50,11 +46,7 @@ const Dropdown = ({ placeholder, options, icon: Icon, onSelect}) => {
           {options.map((option) => (
             <li
               key={option}
-              onClick={() => {
-                setValue(option);
-                setOpen(false);
-                handleSelect(option)
-              }}
+              onClick={() => {handleSelect(option)}}
               className="cursor-pointer px-4 py-3 text-sm text-neutral-300 hover:bg-neutral-800 hover:text-white"
             >
               {option}
