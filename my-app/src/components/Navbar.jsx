@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import menu from '../assets/menu.svg'
 import {X} from "lucide-react";
 import {useState} from "react";
@@ -19,6 +19,17 @@ const Navbar = ({ user }) => {
     const toggleNavbar = () => {
         setMobileDrawerOpen(!mobileDrawerOpen);
     };
+    useEffect(() => {
+    const handleScroll = () => {
+      setMobileDrawerOpen(false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
 
   return (
@@ -67,7 +78,7 @@ const Navbar = ({ user }) => {
                        <ul>
                          {navItems.map((item, index) => (
                             <li key={index} className="py-4 list-none">
-                                <Link to={item.to}>
+                                <Link to={item.to}  onClick={() => setMobileDrawerOpen(false)}>
                                 {item.label}
                                 </Link>
                             </li>
